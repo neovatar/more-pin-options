@@ -46,6 +46,11 @@ Hooks.on("renderNoteConfig", (noteConfig, html, data, options) => {
     noteConfig.setPosition({ height: "auto" });
 });
 
+Hooks.on("closeNoteConfig", (noteConfig) => {
+    // Make sure it is redrawn on closing the config dialog - otherwise it may not be updated on screen
+    noteConfig.document.object.draw({force: true});
+});
+
 Hooks.once("canvasInit", () => {
   libWrapper.register("more-pin-options", "foundry.canvas.placeables.Note.prototype._applyRenderFlags", MorePinOptions._applyRenderFlags, "MIXED");
   libWrapper.register("more-pin-options", "foundry.canvas.placeables.Note.prototype._getTextStyle", MorePinOptions._getTextStyle, "MIXED");
