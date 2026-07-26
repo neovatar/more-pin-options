@@ -91,6 +91,7 @@ jobs:
           tag: ${{ env.TAG_NAME }}
           body: |
             **Installation:** To manually install this release, please use the following manifest URL: ${{ env.RELEASE_INSTALL_URL }}
+            **Changelog:** For a full list of changes, please see the [CHANGELOG](https://github.com/neovatar/more-pin-options/blob/main/CHANGELOG.md#version-${{ replace(steps.manifest.outputs.version, '.', '') }})
 
       - name: Publish release
         uses: neovatar/foundry-package-release@v20260712144538
@@ -99,7 +100,7 @@ jobs:
           token: ${{ secrets.FVTTP_TOKEN }}
           version: ${{ steps.manifest.outputs.version }}
           manifest: ${{ steps.manifest.outputs.manifest }}
-          notes: https://github.com/neovatar/${{ env.MODULE_NAME }}/blob/${{ steps.manifest.outputs.version }}/CHANGELOG.md
+          notes: https://github.com/neovatar/${{ env.MODULE_NAME }}/blob/main/CHANGELOG.md#version-${{ replace(steps.manifest.outputs.version, '.', '') }}
           compat_min: ${{ steps.manifest.outputs.compatibility_minimum }}
           compat_verified: ${{ steps.manifest.outputs.compatibility_verified }}
           dry_run: "false"
