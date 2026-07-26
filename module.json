@@ -1,0 +1,34 @@
+{
+  "id": "more-pin-options",
+  "title": "More Pin Options",
+  "description": "Improved pin options with additional styles.",
+  "authors": [
+    {
+      "name": "neovatar",
+      "url": "https://github.com/neovatar/more-pin-options"
+    }
+  ],
+  "version": "0.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "14"
+  },
+  "esmodules": [
+    "scripts/index.js"
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "lib-wrapper",
+        "type": "module"
+      }
+    ]
+  },
+  "url": "https://github.com/neovatar/more-pin-options",
+  "manifest": "https://github.com/neovatar/more-pin-options/releases/latest/download/module.json",
+  "download": "https://github.com/neovatar/more-pin-options/releases/download/release-13.1.2/more-pin-options.zip",
+  "changelog": "https://github.com/neovatar/more-pin-options/blob/main/CHANGELOG.md",
+  "bugs": "https://github.com/neovatar/more-pin-options/issues",
+  "readme": "https://github.com/neovatar/more-pin-options/blob/main/README.md",
+  "license": "https://github.com/neovatar/more-pin-options/blob/main/LICENSE.md"
+}
