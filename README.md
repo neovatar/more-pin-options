@@ -16,3 +16,12 @@ https://github.com/neovatar/more-pin-options/releases/latest/download/module.jso
 
 See [Foundry Wiki - How to install a module](https://foundryvtt.wiki/en/basics/Modules) on help on how to use the manifest URL to install a module.
 
+## Example
+
+This is an example what you can do with this module.
+
+Basic Foundry map notes:
+![Basic Foundry map notes](docs/basic-foundry.webp)
+
+Map notes using this module:
+![Map notes using this module](docs/more-pin-options.webp)

@@ -8,7 +8,7 @@ on:
 env:
   MODULE_NAME: more-pin-options
   PUBLISH_RELEASE: false
-  ZIP_FILES: scripts LICENSE.md README.md CHANGELOG.md module.json
+  ZIP_FILES: scripts docs LICENSE.md README.md CHANGELOG.md module.json
 
 jobs:
   build:
