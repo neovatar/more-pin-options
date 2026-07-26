@@ -1,3 +1,8 @@
+## Version 13.0.3
+
+### Fixed
+- display correct changelog url in release description
+
 ## Version 13.0.2
 
 ### Fixed

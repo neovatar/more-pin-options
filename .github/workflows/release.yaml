@@ -92,7 +92,7 @@ jobs:
           tag: ${{ env.TAG_NAME }}
           body: |
             **Installation:** To manually install this release, please use the following manifest URL: ${{ env.RELEASE_INSTALL_URL }}
-            **Changelog:** For a full list of changes, please see the [CHANGELOG](https://github.com/neovatar/more-pin-options/blob/main/CHANGELOG.md#version-${{ steps.manifest.outputs.version_slug }})
+            **Changelog:** For a full list of changes, please see the [CHANGELOG for ${{ steps.manifest.outputs.version }}](https://github.com/neovatar/more-pin-options/blob/main/CHANGELOG.md#version-${{ steps.manifest.outputs.version_slug }})
 
       - name: Publish release
         uses: neovatar/foundry-package-release@v20260712144538
