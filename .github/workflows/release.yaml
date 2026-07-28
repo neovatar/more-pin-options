@@ -7,7 +7,7 @@ on:
 
 env:
   MODULE_NAME: more-pin-options
-  PUBLISH_RELEASE: false
+  PUBLISH_RELEASE: true
   ZIP_FILES: scripts docs LICENSE.md README.md CHANGELOG.md module.json
 
 jobs:
