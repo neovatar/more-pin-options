@@ -99,6 +99,7 @@ jobs:
         if: ${{ env.PUBLISH_RELEASE == 'true' }}
         with:
           token: ${{ secrets.FVTTP_TOKEN }}
+          id: ${{ env.MODULE_NAME }}
           version: ${{ steps.manifest.outputs.version }}
           manifest: ${{ steps.manifest.outputs.manifest }}
           notes: https://github.com/neovatar/${{ env.MODULE_NAME }}/blob/main/CHANGELOG.md#version-${{ steps.manifest.outputs.version_slug }}
