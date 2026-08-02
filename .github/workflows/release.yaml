@@ -95,7 +95,7 @@ jobs:
             **Changelog:** [Full list of changes for ${{ steps.manifest.outputs.version }}](https://github.com/neovatar/${{ env.MODULE_NAME }}/blob/main/CHANGELOG.md#version-${{ steps.manifest.outputs.version_slug }})
 
       - name: Publish release
-        uses: neovatar/foundry-package-release@v20260712144538
+        uses: neovatar/foundry-package-release@v20260725075942
         if: ${{ env.PUBLISH_RELEASE == 'true' }}
         with:
           token: ${{ secrets.FVTTP_TOKEN }}
